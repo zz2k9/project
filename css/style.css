@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* layout styles */
+/* body{background-color:black;} */
+.showMe{background-color: white;}
+.showAbout{min-height: 600px;}
+.container-fluid {max-width:1100px; margin:0 auto; padding:0;}
+.content{ margin-bottom:10px; padding-bottom:15px; border-bottom:thin solid rgba(0,0,0,0.1);}
+.hero-unit{ text-align:center; padding:0;}
+/* colours */
+.fader1, .designer{color: rgba(178,50,112,1);}
+.fader2, .developer{color:rgba(255,191,54,0.99);}
+.fader3, .photographer{color:rgba(93,50,178,1);}
+.fader4, .gamer{color: rgba(32,198,161,1);}
+.fader5, .student{color: rgba(209,82,79,1);}
+#title, .active {color:rgba(33,255,216,1);}
+a {color:rgba(255,255,255,0.7); -webkit-transition: ease-in-out all 0.5s;}
+.dropdown-menu > li > a , .dropdown-submenu > a {-webkit-transition: ease-in-out all 0.5s;}
+.navbar a:hover {color:rgba(51,255,204,1); -webkit-transition: ease-in-out all 0.5s;}
+/* fonts */
+footer{margin-top: 50px;}
+.fadeInfo{font-size: 1.25em;}
+.about .span4 h3 {font-size:1.1em; font-weight:500; margin: 0; padding: 0; letter-spacing:;}
+.black{font-weight:400;}
+.navbar {font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-weight:500;}
+a {text-decoration:none;}
+.hero-unit p {font-size:16px; padding:0; line-height:normal; margin-top:10px; padding-top:15px; border-top:thin solid rgba(0,0,0,0.1);}
+/*images */
+.aboutBG{background:url(../images/aboutBG.png)}
+.blackbird {width:60%; height:60%; margin-top:-10px; vertical-align:middle;}
+.banner { width:100%; z-index:-1; background:no-repeat;}
+.span12 img {margin-bottom:15px;}
+.image{display:block; position:relative;}
+.overlay{position:absolute; padding-left:2%; width:30%; background: rgba(0,0,0,0.4); color:rgba(255,255,255,0.8); left:0; bottom:10px; font-size:12px;}
+/* responsive */
+@media only screen and (max-width:768px), only screen and (max-device-width: 768px){
+.overlay{display:none;}
+}
+/* magicpopup style */
+.image-source-link {
+	color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+/* animations */
+@-webkit-keyframes pulse
+{
+0%{ /*-webkit-transform:scale(1,1);*/ -webkit-transform:scale3d(1,1,1); }
+50%{/*-webkit-transform:scale(1.015,1.015);*/ -webkit-transform:scale3d(1.015,1.015,1);}
+100%{/*-webkit-transform:scale(1,1);*/-webkit-transform:scale3d(1,1,1); }
+}
+@-o-keyframes{
+	
+}
+.animate1 {
+	-webkit-animation-name:pulse;z-index:100; -webkit-animation-delay:3s; -webkit-animation-duration:0.6s; -webkit-animation-iteration-count:1; -webkit-transition:ease-in-out; -webkit-backface-visibility:hidden; animation-name:pulse;
+}
+/*
+.animate2 {
+	-webkit-animation-name:pulse;z-index:100; -webkit-animation-delay:4s; -webkit-animation-duration:0.6s; -webkit-animation-iteration-count:1; -webkit-transition:ease-in-out;
+}
+.animate3 {
+	-webkit-animation-name:pulse;z-index:100; -webkit-animation-delay:5s; -webkit-animation-duration:0.6s; -webkit-animation-iteration-count:1; -webkit-transition:ease-in-out;
+}
+.animate4 {
+	-webkit-animation-name:pulse;z-index:100; -webkit-animation-delay:6s; -webkit-animation-duration:0.6s; -webkit-animation-iteration-count:1; -webkit-transition:ease-in-out;
+}
+.animate5 {
+	-webkit-animation-name:pulse;z-index:100; -webkit-animation-delay:7s; -webkit-animation-duration:0.6s; -webkit-animation-iteration-count:1; -webkit-transition:ease-in-out;
+}
+.animate6 {
+	-webkit-animation-name:pulse;z-index:100; -webkit-animation-delay:8s; -webkit-animation-duration:0.6s; -webkit-animation-iteration-count:1; -webkit-transition:ease-in-out;
+}
+*/
+
+
+/* video css */
+.videoContainer {
+	position:relative; padding-bottom:50%; overflow:hidden;
+}
+.videoContainer iframe, .videoContainer object, .videoContainer embed {
+	 width:100%; height:100%; top:0; left:0; position:relative;
+}
